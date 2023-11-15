@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <h2>Calculator</h2>
+
+    <form action="/Calculator/Operation" method="post">
+        <label for="number1">Enter first number:</label>
+        <input type="number" id="number1" name="number1" required>
+        
+        <label for="number2">Enter second number:</label>
+        <input type="number" id="number2" name="number2" required>
+
+        <label for="operation">Choose an operation:</label>
+        <select id="operation" name="operation" required>
+            <option value="add">Addition (+)</option>
+            <option value="multiply">Multiplication (*)</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
